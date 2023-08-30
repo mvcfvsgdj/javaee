@@ -1,0 +1,27 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<%
+String NUM1 = request.getParameter("NUM");
+PrintWriter out = respone.getWriter();
+
+int NUM = Integer.parseInt(NUM1);%>
+
+
+<% for(int i= 1 ; i<=NUM; i++){
+	String star = "*"; %>
+	<h2><%=out.print(star); %></h2>
+	
+<%	
+}
+%>
+
+</body>
+</html>

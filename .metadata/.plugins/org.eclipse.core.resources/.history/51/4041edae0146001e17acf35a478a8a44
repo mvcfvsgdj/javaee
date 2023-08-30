@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<script>
+
+function check() {
+    let frm = document.frm;
+    let userid = frm.userid;
+    let userpw = frm.userpw;
+
+    if (userid.value == "") { // 불필요한 .value 제거
+        alert("아이디를 입력하세요.");
+        userid.focus();
+        return false;
+    }
+    
+    if (userpw.value == "") { // 불필요한 .value 제거
+        alert("패스워드를 입력하세요.");
+        userpw.focus();
+        return false;
+    }
+
+    return true;
+}
+
+</script>
+
+<body>
+
+	<!--submit 을 중지하고 싶을 때 사용 -->
+
+	<form name="frm" action="register_action.jsp" method="post" onsubmit="return check()">
+
+		<input type="text" name="userid">
+		<input type="text" name="userpw">
+		<input type="text" name="username">
+		<br>
+		<button>회원가입</button>
+
+	</form>
+</body>
+
+</html>

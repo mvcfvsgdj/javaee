@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script>
+	
+	function check(){
+		
+		//return false;	
+ let frm =	document.frm;
+ let userid =frm.userid.value;
+ let userpw =frm.userpw.value;
+ 
+	}
+	
+</script>
+<body>
+
+<!--submit 을 중지하고 싶을 때 사용 -->
+
+<form action="register_action.jsp" method="post" onsubmit="return check()">
+	
+	<input type="text" name="userid">
+	<input type="text" name="userpw">
+	<button>로그인</button>
+		
+</form>
+</body>
+</html>

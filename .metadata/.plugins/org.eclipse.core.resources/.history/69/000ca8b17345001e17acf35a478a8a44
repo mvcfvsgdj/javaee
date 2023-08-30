@@ -1,0 +1,32 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@  page import="java.sql.*"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	
+<header><h2>참가자조회</h2></header>
+
+<nav>
+	<table>
+		<tr>
+			<td>참가자id</td>
+			<td>참가자이름</td>
+			<td>생년월일</td>
+			<td>성별</td>
+			<td>실력무대</td>
+			<td>매력무대</td>
+			<tr>
+			
+	</table>
+	
+</nav>
+
+<section></section>
+
+</body>
+</html>

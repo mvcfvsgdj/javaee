@@ -1,0 +1,8 @@
+package prj0825_test;
+
+public class Snippet {
+	public static void main(String[] args) {
+		 out.print("<h2>*</h2>");
+	}
+}
+

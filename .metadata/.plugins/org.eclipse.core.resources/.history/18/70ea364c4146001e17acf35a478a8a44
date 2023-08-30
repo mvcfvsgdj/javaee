@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+header{
+	background-color:rgb(191, 0, 0);
+	height: 200px;
+	margin: 0 auto;
+	line-height: 200px;
+	text-align: center;
+	color: rgb(248, 170, 54);
+}
+nav{
+	background-color: darkgray;
+	color: white;
+	height: 60px;
+	text-align: left;
+	line-height: 60px;
+
+
+}
+a{
+		text-decoration: none;
+		color: white;
+}
+
+img{
+	height: 100px;
+	width: 200px;	
+	margin-top:50px
+}

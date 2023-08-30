@@ -1,0 +1,5 @@
+
+function hi(){
+
+let userName = document.getElementById("userName");
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+header{
+	background-color: beige;
+	height: 200px;
+}
+nav{
+	background-color: darkgray;
+}

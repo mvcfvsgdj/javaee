@@ -1,0 +1,16 @@
+package prj0825_test;
+
+public class HelloWorld {
+	String hello;
+	
+	public HelloWorld() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public HelloWorld(String title) {
+	
+	this.hello=title;
+	
+	}
+
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<script>
+
+	function check() {
+		let frm = document.frm;
+		let menu_code = frm.menu_code;
+		let menu_set = frm.menu_set;
+		let menu_price = frm.menu_price;
+
+		if (menu_code.value == "") { // 불필요한 .value 제거
+			alert("새 세트메뉴를 입력하세요.");
+			menu_code.focus();
+			return false;
+		}
+
+		if (menu_set.value == "") { // 불필요한 .value 제거
+			alert("세트의 가격을 입력하세요.");
+			menu_set.focus();
+			return false;
+		}
+		if (menu_price.value == "") { // 불필요한 .value 제거
+			alert("아이디를 입력하세요.");
+			menu_price.focus();
+			return false;
+		}
+
+
+		return true;
+	}
+
+</script>
+
+<body>
+
+	<!--submit 을 중지하고 싶을 때 사용 -->
+
+	<form name="frm" action="register_action.jsp" method="post" onsubmit="return check()">
+
+		<input type="text" name="userid">
+		<input type="text" name="userpw">
+		<input type="text" name="username">
+		<br>
+		<button>회원가입</button>
+
+	</form>
+</body>
+
+</html>
