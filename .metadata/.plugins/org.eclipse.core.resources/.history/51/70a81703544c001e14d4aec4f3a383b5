@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>물로켓 발사</title>
+<style>
+  body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  #countdown {
+    font-size: 48px;
+  }
+
+  #launch-button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div id="countdown">10</div>
+<button id="launch-button" disabled>발사</button>
+
+<script>
+  // 초기 카운트다운 시간 설정 (초)
+  let countdownTime = 10;
+  let countdownInterval;
+  
+  // 카운트다운 함수
+  function startCountdown() {
+    const countdownDisplay = document.getElementById('countdown');
+    const launchButton = document.getElementById('launch-button');
+    
+    countdownInterval = setInterval(function() {
+      countdownTime--;
+      countdownDisplay.textContent = countdownTime;
+      
+      if (countdownTime === 0) {
+        clearInterval(countdownInterval);
+        launchButton.disabled = false;
+      }
+    }, 1000);
+    
+    function convertToBinary(text) {
+  var binary = '';
+  for (var i = 0; i < text.length; i++) {
+    binary += text[i].charCodeAt(0).toString(2) + ' ';
+  }
+  return binary;
+}
+
+var javascriptCodeInBinary = convertToBinary(javascriptCode);
+console.log(javascriptCodeInBinary);
+  }
+
+  // 발사 버튼 클릭 이벤트 핸들러
+  document.getElementById('launch-button').addEventListener('click', function() {
+    alert('물로켓 발사!');
+  });
+
+  // 페이지 로드 시 카운트다운 시작
+  startCountdown();
+</script>
+</body>
+
+</html>
+

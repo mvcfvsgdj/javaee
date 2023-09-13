@@ -1,0 +1,14 @@
+package prj0913;
+
+import java.util.HashSet;
+
+public class SetEx {
+	public static void main(String[] args) {
+		HashSet<String> test = new HashSet<>();
+		
+		test.add("테스트1");
+		test.add("테스트1");
+		test.add("테스트1");
+		test.add("테스트2");
+	}
+}

@@ -7,8 +7,9 @@
 	<meta charset="UTF-8">
 	
 	<title>Insert title here</title>
-	<link href="./css/index.css" rel="stylesheet" />
 	<link href="./css/Mcdonalds.css" rel="stylesheet" />
+
+	
 </head>
 <script>
 
@@ -42,6 +43,7 @@
 </script>
 
 <body>
+<div class="main">
 <header><img src="https://arteepedicab.com/wp-content/uploads/2021/01/McDonalds-Logo.png" ></header>
 <nav>
 <a href="./Mcdonalds_reg.jsp">세트 메뉴 등록 /</a>
@@ -51,14 +53,37 @@
 	<!--submit 을 중지하고 싶을 때 사용 -->
 
 	<form name="frm" action="McReg_action.jsp" method="post" onsubmit="return check()">
+<table> <caption><h2>새 메뉴 추가</h2></caption>
+    <tr>
+        <td>메뉴코드  </td>
+        <td colspan="6"><input type="text" name="menu_code" placeholder="A000"></td>
+        
+    </tr>
 
-		<input type="text" name="menu_code">
-		<input type="text" name="menu_set">
-		<input type="text" name="menu_price">
-		<br>
-		<button>등록완료</button>
+    <tr>
+        <td>메뉴 이름</td>
+        <td colspan="6"><input type="text" name="menu_set" placeholder="불고기버거세트"></td>
 
+    </tr>
+    <tr>
+        <td>메뉴가격</td>
+        <td colspan="6"><input type="text" name="menu_price" placeholder="5000">
+
+        </td>
+
+    <tr>
+        <td colspan="7">
+            <div class="button">
+            <button>등록</button>
+            <button>취소</button>
+            </div>
+        </td>
+
+    </tr>
+</table>
 	</form>
+	<footer></footer>
+	</div>
 </body>
 
 </html>

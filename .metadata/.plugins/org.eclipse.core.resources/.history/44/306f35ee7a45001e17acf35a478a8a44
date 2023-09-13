@@ -1,9 +1,0 @@
-@charset "UTF-8";
-
-header{
-	background-color: beige;
-	height: 300px;
-}
-nav{
-	background-color: darkgray;
-}

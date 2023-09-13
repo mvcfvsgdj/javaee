@@ -1,0 +1,16 @@
+package page;
+
+public class PageHandler2 {
+	int currentPage;
+	int totRecords;
+	int pageSize;
+	int grpSize;
+	
+	int totalPage;
+	int currentgrp;
+	int grpStartPage;
+	int grpEndPage;
+	
+	
+	
+}

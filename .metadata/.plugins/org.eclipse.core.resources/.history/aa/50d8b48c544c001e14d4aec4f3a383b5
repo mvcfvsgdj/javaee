@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+
+</script>
+
+<script>
+	function check() {
+		//document.getElementById("userid")
+		//document.querySelector("")
+		//document.querySelector("")
+		//document.querySelector("").innerHTML = "새내용"
+		let useridT = $("#userid");
+		alert(useridT);
+
+
+		let contents = $("#userid").val();
+		alert(contents);
+		$("#userid").val("새 내용");
+		$("#wrap").html();
+		s
+	}
+</script>
+
+<body>
+	<input type="text" id="userid" value="test">
+	<div id="wrap">div 내용</div>
+	<button onclick="check()">크릭</button>
+</body>
+
+</html>

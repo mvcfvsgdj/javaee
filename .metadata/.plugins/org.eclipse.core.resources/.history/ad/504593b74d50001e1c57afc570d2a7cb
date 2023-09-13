@@ -1,0 +1,97 @@
+package page;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+
+public class MemberDao2 {
+
+	String driver = "oracle.jdbc.driver.OracleDriver";
+	String url = "jdbc:oracle:thin:@localhost:1521:xe";
+	String user = "scott";
+	String password = "tiger";
+	Connection con = null;
+
+	private Connection dbCon() {
+		try {
+			Class.forName(driver);
+			con = DriverManager.getConnection(url, user, password);
+			if (con != null) {
+				System.out.println("db ok");
+			}
+
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return con;
+	}
+	public void close( AutoCloseable ...a) {
+		for( AutoCloseable  item : a) {
+		   try {
+			item.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+		}
+		
+	}
+
+	public String getAllmember() {
+		Connection con = dbCon();
+		
+		String sql = "select * from acorntbl";
+		
+		try {
+			PreparedStatement pst = null;
+			ResultSet rs = null;
+			if(rs.next()) {
+				
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	public int getTotalCnt() {
+		Connection con = dbCon();
+		String sql = "select count(*) from member_tbl_11";
+		int totalCnt = 0; 
+	
+		
+		try {
+		PreparedStatement pst =  con.prepareStatement(sql);
+		ResultSet rs = pst.executeQuery();
+			if(rs.next()){
+				totalCnt = rs.getInt(1);
+				
+			}
+		
+		} catch (SQLException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+		return totalCnt;
+		
+		
+	}
+
+	public static void main(String[] args) {
+		MemberDao2 dao = new MemberDao2();
+		if (dao.dbCon() != null)
+			System.out.println("good");
+		int result = dao.getTotalCnt();
+		System.out.println(result);
+	}
+
+}

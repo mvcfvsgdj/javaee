@@ -1,0 +1,13 @@
+package prj0907;
+
+public class TestService {
+	TestDAO dao = new TestDAO();
+	
+	
+	
+	public TestClass info(String id) {
+	TestClass t =	dao.selectAll(id);
+	return t;
+	}
+	
+}

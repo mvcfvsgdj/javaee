@@ -1,0 +1,19 @@
+package prj0901;
+
+import java.util.ArrayList;
+
+public class AcornService {
+
+	
+	public ArrayList<String> getMemberList(){
+		
+		ArrayList<String> list = new ArrayList<>();
+	
+		list.add("1");
+		list.add("2");
+		list.add("3");
+		list.add("4");
+		
+		return list ;
+	}
+}

@@ -1,0 +1,17 @@
+package goods;
+
+import java.util.ArrayList;
+
+public class goodsService {
+
+	goodsDAO dao =new goodsDAO();
+	
+	
+	public ArrayList<String> getlList(){
+		ArrayList<String>	list = dao.selectAll();
+		return list;
+	}
+	public void newMenuAdd(goods g) {
+		dao.insertMenu(g);
+	}
+}

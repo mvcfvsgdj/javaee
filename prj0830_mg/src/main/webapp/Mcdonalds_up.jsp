@@ -59,7 +59,6 @@ try {
 <head>
 <meta charset="UTF-8">
 <link href="./css/Mcdonalds.css" rel="stylesheet" />
-<link href="./css/index.css" rel="stylesheet" />
 <title>Insert title here</title>
 </head>
 <body>
@@ -91,7 +90,7 @@ try {
 			</tr>
 			<tr>
 
-				<td><input type="submit" value="변경"></td>
+				<td colspan="2"><input type="submit" value="변경"></td>
 			</tr>
 
 		</table>

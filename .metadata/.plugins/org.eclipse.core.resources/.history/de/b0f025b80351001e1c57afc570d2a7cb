@@ -1,0 +1,23 @@
+package acorn;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class AcornDAOTest {
+
+	@Test
+	void testSelectAll() {
+		AcornDAO dao = new AcornDAO();
+
+		assertTrue(dao.selectAll() !=null);
+		assertTrue(dao.selectAll().size()>=1);
+				//fail("Not yet implemented");
+	
+	void testSelectAll2() {
+		String[] query= {"dy","yj"};
+			assertTure(dao.selectAll2(new String[]{"dy","yj"}).size() ==2);
+	}
+	}
+}
+

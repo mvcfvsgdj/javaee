@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+
+</script>>
+
+<script>
+	function check() {
+		//document.getElementById("userid")
+		//document.querySelector("")
+		let useridT = $("#userid");
+		alert(useridT);
+
+
+		let contents = $("#userid").val();
+		alert(contents);
+	}
+</script>
+
+<body>
+	<input type="text" id="userid">
+	<button onclick="check()">크릭</button>
+</body>
+
+</html>

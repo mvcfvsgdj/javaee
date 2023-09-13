@@ -1,0 +1,23 @@
+package burger;
+import java.util.ArrayList;
+
+public class MenuService {
+	
+	
+	public ArrayList<Burger> getMenus(){
+		
+		ArrayList<Burger> list = dao.selectAll();
+		
+		return list;
+		
+	public void menu(Burger) {
+		
+	}
+		
+		
+	}
+	
+	
+	
+
+}

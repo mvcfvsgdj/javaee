@@ -6,7 +6,6 @@
 <head>
 <meta charset="UTF-8">
 <link href="./css/Mcdonalds.css" rel="stylesheet" />
-<link href="./css/index.css" rel="stylesheet" />
 <title>Insert title here</title>
 
 </head>
@@ -14,7 +13,7 @@
 <body>
 <header><img src="https://arteepedicab.com/wp-content/uploads/2021/01/McDonalds-Logo.png" ></header>
 <nav>
-<a href="./Mcdonalds_reg.jsp"">세트 메뉴 등록 /</a>
+<a href="./Mcdonalds_reg.jsp">세트 메뉴 등록 /</a>
 <a href="./Mcdonalds_list.jsp">세트 메뉴 조회&변경 /</a>
 <a href="./index.jsp">홈으로 </a>
 </nav>
@@ -23,7 +22,7 @@
 		<tr>
 			<td>메뉴코드</td>
 			<td>메뉴이름</td>
-			<td>메뉴가격</td>
+			<td colspan='2'>메뉴가격</td>
 
 		</tr>
 

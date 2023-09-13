@@ -1,0 +1,8 @@
+package page;
+
+public class Coffee {
+	
+	String code;
+	String name;
+	String price;
+}

@@ -1,0 +1,26 @@
+import java.util.ArrayList;
+
+public class MenuService {
+	
+	
+	public ArrayList<Burger> getMenus(){
+		
+		ArrayList<Burger> list = new ArrayList<Burger>();
+		list.add(new Burger("A001" , "햄버거" , "7000"));
+		list.add(new Burger("A002" , "햄버거" , "7000"));
+		list.add(new Burger("A003" , "햄버거" , "7000"));
+		list.add(new Burger("A004" , "햄버거" , "7000"));
+		list.add(new Burger("A005" , "햄버거" , "7000"));
+		list.add(new Burger("A006" , "햄버거" , "7000"));
+		
+		return list;
+		
+		
+		
+		
+	}
+	
+	
+	
+
+}

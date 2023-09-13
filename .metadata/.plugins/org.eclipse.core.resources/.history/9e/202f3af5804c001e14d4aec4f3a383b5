@@ -1,0 +1,9 @@
+package acorn;
+
+public class Movie {
+
+	String best;
+	String name;
+	String since;
+	
+}

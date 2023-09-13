@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AcornDAOTest" project="JunitPrj0912" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="acorn.AcornDAOTest" time="0.854" displayname="AcornDAOTest" uniqueid="[engine:junit-jupiter]/[class:acorn.AcornDAOTest]">
+    <testcase name="testSelectAll" classname="acorn.AcornDAOTest" time="0.855" displayname="testSelectAll()" uniqueid="[engine:junit-jupiter]/[class:acorn.AcornDAOTest]/[method:testSelectAll()]"/>
+  </testsuite>
+</testrun>

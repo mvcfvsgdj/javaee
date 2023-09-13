@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+	
+</script>>
+	
+	<script>
+		//document.getElementById("userid")
+		//document.querySelector("")
+	let useridT =	$("#userid")
+	alert(useridT)
+		
+	</script>
+<body>
+<input type="text" id="userid">
+<button>크릭</button>
+</body>
+</html>

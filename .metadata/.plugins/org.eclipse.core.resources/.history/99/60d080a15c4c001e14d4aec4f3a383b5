@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js">
+
+</script>
+<script>
+
+function changeCss(){
+	alert("asd");
+}
+
+
+</script>
+
+
+<body>
+
+
+	<button id="btn1" onclick="changeCss()">1</button>
+	<button id="btn2">2</button>
+
+
+
+</body>
+
+</html>

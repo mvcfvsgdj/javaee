@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+    <%@ page import="java.util.ArrayList"%>
+<%@ page import="page.PageHandler2"%>
+<%@ page import="page.Coffee"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<% PageHandler2 handler = (PageHandler2) request.getAttribute("handler2");
+	ArrayList<Coffee> list = (ArrayList<Coffee>) request.getAttribute("list");
+%>
+<table>
+		<tr>
+			<td>코드</td>
+			<td>메뉴</td>
+			<td>이름</td>
+
+		</tr>
+	</table>
+	
+	<%
+	for (Coffee c : list) {
+	%>
+	<table>
+		<tr>
+			<td><%=c.getCode() %></td>
+			<td><%=c.getName() %></td>
+			<td><%=c.getPrice() %></td>
+
+		</tr>
+		<%} %>
+	</table>
+	<p>목록</p>
+	<% int index = handler.getGrpStartPage();
+		if(handler.getCurrentgrp()>1){
+	%>
+	<a href="/pagePrj0911/coffee.page?p=<%=index - 1%>">[이전]</a>
+	
+</body>
+</html>

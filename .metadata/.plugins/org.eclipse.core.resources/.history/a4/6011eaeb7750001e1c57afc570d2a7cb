@@ -1,0 +1,48 @@
+package page;
+
+public class PageHandler2 {
+	int currentPage;
+	int totRecords;
+	int pageSize;
+	int grpSize;
+	
+	int totalPage;
+	int currentgrp;
+	int grpStartPage;
+	int grpEndPage;
+	
+	
+	public PageHandler2(int currentPage, int totRecords, int pageSize, int grpSize, int totalPage, int currentgrp,
+			int grpStartPage, int grpEndPage) {
+		super();
+		this.currentPage = currentPage;
+		this.totRecords = totRecords;
+		this.pageSize = pageSize;
+		this.grpSize = grpSize;
+	}
+	
+	private void calPage() {
+
+		int remain =totRecords % pageSize;
+		if(remain==0) {
+			totalPage=totRecords/pageSize;
+			
+		}else {
+			totalPage = totRecords/pageSize+1;
+		}
+		int remain2 = currentPage % grpSize;
+		if(remain2==0) {
+			currentgrp=currentPage/grpSize;
+			
+		}else {
+			currentgrp=currentPage/grpSize+1;
+		}
+		
+		grpStartPage = (currentgrp-1 )* grpSize+1;
+		grpEndPage = currentgrp*grpSize;
+
+
+	}
+	
+	
+}

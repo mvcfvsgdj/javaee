@@ -1,0 +1,47 @@
+package acorn;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class MovieDAO {
+    // 데이터베이스 연결 정보
+
+    public Connection dbcon() {
+        // ... (이전 코드와 동일)
+    }
+
+    public String selectOne(String list) {
+        String best = "";
+        Connection con = dbcon();
+        String sql = "SELECT best FROM movietbl1 WHERE name = ?";
+
+        try {
+            PreparedStatement pst = con.prepareStatement(sql);
+            pst.setString(1, list);
+            ResultSet rs = pst.executeQuery();
+
+            if (rs.next()) {
+                best = rs.getString(1);
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return best;
+    }
+
+    public static void main(String[] args) {
+        // TestDAO dao = new TestDAO(); // 이 부분을 수정하여 MovieDAO 객체를 생성하도록 변경
+        MovieDAO dao = new MovieDAO();
+        Connection con = dao.dbcon();
+        if (con != null) {
+            System.out.println("db good");
+        }
+
+        String name = dao.selectOne("1");
+        System.out.println(name);
+    }
+}

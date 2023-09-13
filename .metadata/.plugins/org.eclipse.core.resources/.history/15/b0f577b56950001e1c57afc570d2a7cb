@@ -1,0 +1,13 @@
+package page;
+
+public class PageHandler {
+	int currentPage; //현재페이지
+	int totRecords; //총레코드수
+	int PageSize;	//페이지 사이즈
+	int grpSize; // 그룹의 사이즈
+	
+	int totalPage;
+	int currentGrp;
+	int grpStartPage;
+	int grpEndPage;
+}

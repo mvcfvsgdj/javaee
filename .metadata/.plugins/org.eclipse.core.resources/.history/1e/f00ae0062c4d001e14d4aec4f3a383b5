@@ -1,0 +1,15 @@
+package prj0907;
+
+import java.util.ArrayList;
+
+public class TestService {
+	TestDAO dao = new TestDAO();
+	
+	
+	
+	public ArrayList<String> info() {
+	TestClass t = (TestClass) dao.selectAll();
+	return t;
+	}
+	
+}

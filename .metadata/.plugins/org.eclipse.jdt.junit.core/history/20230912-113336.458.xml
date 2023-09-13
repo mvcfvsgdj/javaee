@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="CalculatorTest" project="ExceptionPrj" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="acorn.CalculatorTest" time="0.01" displayname="CalculatorTest" uniqueid="[engine:junit-jupiter]/[class:acorn.CalculatorTest]">
+    <testcase name="testAdd" classname="acorn.CalculatorTest" time="0.007" displayname="testAdd()" uniqueid="[engine:junit-jupiter]/[class:acorn.CalculatorTest]/[method:testAdd()]"/>
+    <testcase name="testDiv" classname="acorn.CalculatorTest" time="0.0" displayname="testDiv()" uniqueid="[engine:junit-jupiter]/[class:acorn.CalculatorTest]/[method:testDiv()]"/>
+    <testcase name="testMul" classname="acorn.CalculatorTest" time="0.0" displayname="testMul()" uniqueid="[engine:junit-jupiter]/[class:acorn.CalculatorTest]/[method:testMul()]"/>
+    <testcase name="testSub" classname="acorn.CalculatorTest" time="0.0" displayname="testSub()" uniqueid="[engine:junit-jupiter]/[class:acorn.CalculatorTest]/[method:testSub()]"/>
+  </testsuite>
+</testrun>

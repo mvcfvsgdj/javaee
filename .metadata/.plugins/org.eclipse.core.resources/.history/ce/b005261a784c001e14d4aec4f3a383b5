@@ -1,0 +1,17 @@
+package acorn;
+
+import org.json.JSONObject;
+
+public class FoodService {
+
+	public JSONObject getFoodInfo() {
+Food food = new Food("test","4000");
+		
+		JSONObject o = new JSONObject();
+		
+		o.put("name", food.getName());
+		o.put("price", food.getPrice());
+	
+		return o;
+	}
+}

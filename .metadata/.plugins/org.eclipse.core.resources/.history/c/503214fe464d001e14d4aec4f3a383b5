@@ -1,0 +1,26 @@
+package prj0907;
+
+import java.util.ArrayList;
+
+import org.json.JSONArray;
+
+public class TestService {
+    TestDAO dao = new TestDAO();
+
+    public ArrayList<TestClass> info() {
+        ArrayList<TestClass> result = dao.selectAll();
+        return result;
+    }
+    
+    
+    public JSONArray  info2() {
+        ArrayList<TestClass> result = dao.selectAll();        
+        JSONArray arr  = new JSONArray();   //jsonarray 로 변환 
+        
+        
+        
+        
+        
+        return arr;
+    }
+}

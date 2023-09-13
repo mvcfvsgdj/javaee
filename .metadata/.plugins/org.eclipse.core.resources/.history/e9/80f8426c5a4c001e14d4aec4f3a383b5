@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+<script>
+
+	window.addEventListener("load", load );
+		
+		function load(){
+		let div = document.getElementById("wrap");
+		alert(div.innerHTML);
+}
+
+</script>
+
+
+<body>
+
+	<div id="wrap">div 내용</div>
+
+
+
+
+
+</body>
+
+</html>

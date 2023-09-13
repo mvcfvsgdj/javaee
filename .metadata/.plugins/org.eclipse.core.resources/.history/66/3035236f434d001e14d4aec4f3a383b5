@@ -1,0 +1,44 @@
+package prj0907;
+
+public class TestClass {
+	String store_code;
+	String store_loc;
+	String store_m;
+	
+	public TestClass() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	public TestClass(String store_code, String store_loc, String store_m) {
+		super();
+		this.store_code = store_code;
+		this.store_loc = store_loc;
+		this.store_m = store_m;
+	}
+	@Override
+	public String toString() {
+		return "TestClass [store_code=" + store_code + ", store_loc=" + store_loc + ", store_m=" + store_m + "]";
+	}
+	String getStore_code() {
+		return store_code;
+	}
+	void setStore_code(String store_code) {
+		this.store_code = store_code;
+	}
+	String getStore_loc() {
+		return store_loc;
+	}
+	void setStore_loc(String store_loc) {
+		this.store_loc = store_loc;
+	}
+	String getStore_m() {
+		return store_m;
+	}
+	void setStore_m(String store_m) {
+		this.store_m = store_m;
+	}
+	
+	
+	
+}

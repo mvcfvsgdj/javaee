@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="ExTestTest" project="JunitPrj0912" tests="1" started="1" failures="0" errors="0" ignored="0">
+  <testsuite name="acorn.ExTestTest" time="0.009" displayname="ExTestTest" uniqueid="[engine:junit-jupiter]/[class:acorn.ExTestTest]">
+    <testcase name="test" classname="acorn.ExTestTest" time="0.009" displayname="test()" uniqueid="[engine:junit-jupiter]/[class:acorn.ExTestTest]/[method:test()]"/>
+  </testsuite>
+</testrun>

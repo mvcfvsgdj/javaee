@@ -1,0 +1,40 @@
+package prj0907;
+
+import java.util.ArrayList;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+
+public class TestService {
+    TestDAO dao = new TestDAO();
+
+    public ArrayList<TestClass> info() {
+        ArrayList<TestClass> result = dao.selectAll();
+        return result;
+    }
+    
+    
+    public JSONArray  info2() {
+        ArrayList<TestClass> list = dao.selectAll(); 
+        
+        JSONArray arr  = new JSONArray();   //jsonarray 로 변환 
+       
+ 
+        for (TestClass t : list) {
+            JSONObject o = new JSONObject();
+            o.put("code", t.getStore_code());
+            o.put("loc", t.getStore_loc());
+            o.put("m", t.getStore_m());
+            arr.put(o);
+        }
+			
+			
+        return arr;
+    }
+        
+        
+        
+        
+    
+}

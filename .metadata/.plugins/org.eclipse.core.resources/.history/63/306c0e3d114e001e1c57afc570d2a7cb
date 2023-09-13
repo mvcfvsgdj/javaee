@@ -1,0 +1,8 @@
+package elprj;
+
+public class Coffee {
+
+	String code;
+	String name;
+	int price;
+}

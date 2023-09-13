@@ -1,0 +1,10 @@
+package cartPrj;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+
+@WebServlet("/itemDetail")
+public class itemDetailServlet extends HttpServlet {
+
+}

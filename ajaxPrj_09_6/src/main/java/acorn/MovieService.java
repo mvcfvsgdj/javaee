@@ -1,0 +1,60 @@
+package acorn;
+
+import java.sql.Connection;
+import java.util.ArrayList;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+public class MovieService {
+	MovieDAO dao = new MovieDAO();
+public JSONArray getMovieList() {
+		
+		ArrayList<Movie> list = new ArrayList<>();
+		list.add(new Movie("1","조커", "2019"));
+		list.add(new Movie("2","어바웃타임", "2012"));
+		list.add(new Movie("3","탑건2:매버릭", "2022"));
+		list.add(new Movie("4","헤이트풀8", "2015"));
+		list.add(new Movie("5","꽃다발같은사랑을했다", "2021"));
+	
+		JSONArray arr = new JSONArray();
+		for(int i=0; i<list.size(); i++) {
+			Movie m = list.get(i);
+			JSONObject o = new JSONObject();
+			o.put("best", m.getBest());
+			o.put("name", m.getName());
+			o.put("since", m.getSince());
+			
+			arr.put(o);
+		}
+		return arr;
+		
+	}
+	
+
+public JSONArray getMovieRealList() {
+	/*
+	ArrayList<Movie> list = new ArrayList<>();
+	list.add(new Movie("1","조커", "2019"));
+	list.add(new Movie("2","어바웃타임", "2012"));
+	list.add(new Movie("3","탑건2:매버릭", "2022"));
+	list.add(new Movie("4","헤이트풀8", "2015"));
+	list.add(new Movie("5","꽃다발같은사랑을했다", "2021"));*/
+	
+	ArrayList<Movie> list  = dao.selectAll();
+
+	JSONArray arr = new JSONArray();
+	for(int i=0; i<list.size(); i++) {
+		Movie m = list.get(i);
+		JSONObject o = new JSONObject();
+		o.put("best", m.getBest());
+		o.put("name", m.getName());
+		o.put("since", m.getSince());
+		
+		arr.put(o);
+	}
+	return arr;
+	
+}
+
+}

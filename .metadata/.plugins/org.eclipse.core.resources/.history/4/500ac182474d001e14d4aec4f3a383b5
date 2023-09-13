@@ -1,0 +1,36 @@
+package prj0907;
+
+import java.util.ArrayList;
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import acorn.Food;
+
+public class TestService {
+    TestDAO dao = new TestDAO();
+
+    public ArrayList<TestClass> info() {
+        ArrayList<TestClass> result = dao.selectAll();
+        return result;
+    }
+    
+    
+    public JSONArray  info2() {
+        ArrayList<TestClass> list = dao.selectAll();        
+        JSONArray arr  = new JSONArray();   //jsonarray 로 변환 
+        for(int i=0 ; i<list.size();i++) {
+        	TestClass t= list.get(i);
+			JSONObject o = new JSONObject();
+			t.put("code", t.getStore_code());
+			t.put("loc", t.getStore_loc());
+			t.put("m", t.getStore_m());
+			arr.put(o);
+			
+        
+        
+        
+        
+        return arr;
+    }
+}
